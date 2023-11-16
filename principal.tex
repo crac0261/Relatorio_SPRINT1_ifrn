@@ -1,0 +1,399 @@
+% www.overleaf.com
+
+%cuidado ao mexer no arquivo configuracoes
+%nao tente compilar de dentro dele, não irá funcionar
+%caso faça isso, volte para este arquivo e tente novamente
+\include{configuracoes}
+
+
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{RELATÓRIO SPRINT 1 SOBRE: \\                                          Solução de baixo custo utilizando firmwares baseados em Linux para roteadores remanufaturados}
+%\autor{Caio Rafael Alexandre Camilo \and Renner de Oliveira Torres Junior}
+\author{
+  CAIO RAFAEL ALEXANDRE CAMILO \\
+  RENNER DE OLIVEIRA TORRES 
+}
+
+\local{Natal/RN}
+%Sempre adicione a titulação do professor
+%Ele pode ficar bem zangado se for esquecido
+\orientador{Prof. Dr. Carlos Gustavo Araújo da Rocha}
+\primeiroMembroBanca{Prof. Me. Percivaldo Abrupto}{Examinador interno - IFRN}
+\segundoMembroBanca{Prof. Dr. Agrônio Morolov}{Examinador interno - IFRN}
+\dataApresentacao{21 de Novembro de 2023}
+\data{2023}
+\newcommand{\nomeInstituicao}{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE}
+\instituicao{%
+  \nomeInstituicao -- IFRN
+  \par
+  Redes de Computadores}
+\tipotrabalho{Relatório técnico}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Relatório de pesquisa da disciplina do projeto integrador apresentado ao Curso Superior de Tecnologia Redes de Computadores do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do
+Norte, Campus Natal Central.}
+% ---
+
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+%esse include precisava ficar depois do \begin{document}
+\include{renews}
+
+
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% ----------------------------------------------------------
+% Introdução
+% ----------------------------------------------------------
+\secao{Objetivo Geral SPRINT 1}
+
+
+Você deve definir um objetivo simples, preferencialmente que a solução do problema seja o objetivo e não a construção do sistema.
+Ex:
+O objetivo deste trabalho é solucionar o problema de superlotação na empresa X.
+
+Uma vez analisados os problemas, chegou-se a conclusão de que o problema pode ser solucionado ou amenizado com um aplicativo Y que irá fazer Z coisas, assim diminuindo o problema de superlotação.
+
+OBS: Defina um objetivo que você realmente poderá cumprir e que poderá ser verificado, por exemplo, ``O objetivo deste trabalho é melhorar o aprendizado da linguagem X'', ao final você vai conseguir provar que você melhorou o aprendizado? Você aplicará testes nos alunos para verificar isso? Se não, então é melhor escrever o objetivo de uma forma diferente
+
+% ----------------------------------------------------------
+% Capitulo com exemplos de comandos inseridos de arquivo externo 
+% ----------------------------------------------------------
+\subsecao{Objetivos Específicos SPRINT 1}
+
+
+Aqui você irá listar alguns objetivos específicos, que seriam pontos que você precisa percorrer para chegar ao seu objetivo final. Obs, não listar objetivos muito óbvios como, ``Realizar levantamento bibliográfico'' e nem amarrar tanto  a solução do problema, ex: Se o problema for superlotação ele pode ser resolvido de várias formas, o aplicativo é apenas uma delas, então um objetivo ruim seria: "Construir o aplicativo Y"
+
+Exemplos:
+
+\begin{itemize}
+\item Entender o funcionamento da empresa X
+\item Elaborar uma solução, ou projeto
+\item Construir o projeto
+\item Implantar a solução
+\end{itemize}
+
+
+
+
+
+
+\secao{ISSUES}
+
+\label{ref_teorico}
+
+
+Ex.: Segundo \citeonline[p. 20]{doneda2006privacidade}.
+
+Sobrenome do autor, fora do texto, nos parênteses – Minúsculos.
+Ex.: \cite[p. 20]{paulino2006analise}.
+
+Citação de páginas web, para fazer essas citações é preciso construir o código que vai para o bib, para isso é preciso descobrir o ano de publicação e autor. Muitas vezes o nome do autor vem na própria publicação, o nome do site só poderá ser usado se o nome do autor não constar na página. O ano de publicação também pode ser encontrado na página, porém é mais comum que não exista essa informação, então você pode procurar pelo ano em que o Google indexou a página. Basta fazer uma pesquisa no Google que encontre a página e utilizar junto o filtro de datas, com isso o Google irá mostrar a data de indexação junto com os resultados. Exemplo da citação online \cite{refABNTSite}.
+
+
+Pode notar que tudo que é citado aparece automaticamente no final do documento em referências.
+
+%\subsecao{Tecnologias utilizadas}
+
+%Aqui você pode listar as tecnologias utilizadas, uma seção para cada uma. É importantíssimo destacar o motivo da escolha de cada tecnologia.
+
+
+\secao{Documentos}
+\label{sec:metodologia}
+
+Na metodologia você irá descrever todo o passo a passo que você realizou para construir o seu projeto.
+Ex: Primeiramente foi necessário fazer um levantamento bibliográfico utilizando as bases de dados do Google \textit{Scholar} e a palavra-chave "COVID-19". Após este levantamento bibliográfico foram feitas reuniões com o cliente, a partir dos resultados das reuniões foram gerados gráficos.
+
+Não esqueça de explicar detalhadamente como foi a metodologia de desenvolvimento, se foi Scrum, Xp, OpenUp, ou se não foi nenhuma delas e sim algo baseado em princípios ágeis, que é o mais comum.
+
+É interessante construir algum tipo de cronograma.
+
+
+
+%\subsecao{Desenvolvimento}
+%\label{desenvolvimento}
+
+%Aqui você irá mostrar o seu trabalho.
+
+%\subsubsecao{Seção Terciária}
+%\label{outrasecao}
+
+%Pode ser dividido em subseções
+
+%\subsubsubsecao{Seção quaternária}
+
+%Ou subseções das subseções
+
+%Em seguida um exemplo de como fazer uma listagem de itens.
+
+%\noindent Descrever brevemente:
+%\begin{itemize}
+%\item A lei;
+%\item Objetivo;
+%\item Carga horária;
+%\item Jornada de trabalho.
+
+%\end{itemize}
+
+%Este parágrafo contém um exemplo de nota de rodapé\footnote{A nota de rodapé serve para explicar algum termo no rodapé da página, de forma que a leitura não é interrompida pela explicação}.
+
+%Toda figura ou tabela deve ser referenciada e EXPLICADA, dizendo ``A Figura X representa tal coisa, e isso funciona assim por causa disso e daquilo, lembrar de sempre escrever Figura com F maiúsculo''. Aqui também está o exemplo de como se deve usar as aspas. A Figura \ref{figura:qualquernome} é um exemplo de inclusão de imagem.
+
+%normalmente o latex ira procurar o melhor lugar no documento para encaixar a imagem/tabela, mas isso pode atrapalhar a leitura
+%\begin{figure}[h]% o h faz com que ele procure um bom lugar para a imagem, mas isso pode bagunçar em alguns casos, use o H (maiúsculo) para forçar ela a ficar no local determinado
+    %\caption{Exemplo de imagem}
+    %\centering
+   % \includegraphics[width=5cm]{imagens/grafico.png}
+    %\label{figura:qualquernome}
+    %\fonteimagem{Fonte: Elaborado pelo autor}
+%\end{figure}
+
+
+%Exemplo com duas imagens a Figura \ref{fig:a} é a figura da esquerda e a Figura \ref{fig:b} é a figura da direita.
+
+\begin{figure}[H]
+     \centering
+     \caption{Telas de Nova renovação}
+     \begin{subfigure}[t]{0.40\textwidth}
+         \centering
+        \includegraphics[width=\textwidth]{imagens/grafico.png}
+         \caption{Selecionar paciente cadastrado}%
+         \label{fig:a}
+     \end{subfigure} %nao pode ter espaço aqui, aí fica uma ao lado da outra
+     \begin{subfigure}[t]{0.40\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{imagens/grafico.png}
+         \caption{Formulário de nova renovação}%
+         \label{fig:b}
+     \end{subfigure}
+     
+    \fonteimagem{Fonte: Elaborado pelo autor}
+    \label{fig:13}
+\end{figure}
+
+Dica: é comum o desenvolvimento de protótipos, quando assim for, coloque-os todos dentro de um apêndice e indique: os protótipos construídos estão disponíveis no Apêndice \ref{appendix:prototipos} deste documento. Os anexos são para documentos que você não produziu, mas que acha importante para o texto.
+
+\newpage
+
+Há uma diferença entre tabelas e quadros, tabelas não possuem linhas verticais, quadros possuem, no mais são muito semelhantes, inclusive a apresentação no texto. O Quadro \ref{quad:ex} é um exemplo. Sugiro o uso do site \url{https://www.tablesgenerator.com/} para gerar o código:
+
+
+
+\begin{quadro}
+\caption{Exemplo de quadro}
+\label{quad:ex}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{\textbf{Qtd}} & \multicolumn{1}{l|}{\textbf{Valor R\$}} & \multicolumn{1}{l|}{\textbf{Tipo}} \\ \hline
+\rowcolor[HTML]{FFCC67} 
+\textbf{Produto A}     & 2                                 & 22                                      & C22                                \\ \hline
+\textbf{Produto C}     & 3                                 & 33                                      & C88                                \\ \hline
+\textbf{Produto D}     & 4                                 & 11                                      & c40                                \\ \hline
+\end{tabular}
+\fonteimagem{Fonte: Elaborado pelo autor}
+\end{quadro}
+
+
+A Tabela \ref{tab:ex} é um exemplo de tabela, não possui linhas verticais.
+
+
+
+\begin{table}[h]% o h força a imagem/tabela a ficar neste local
+\caption{Minha tabela}
+\label{tab:ex}
+\centering
+\begin{tabular}{lccc}
+\hline
+\multicolumn{1}{c}{} & \multicolumn{1}{l}{\textbf{Qtd}} & \multicolumn{1}{l}{\textbf{Valor R\$}} & \multicolumn{1}{l}{\textbf{Tipo}} \\ \hline
+\rowcolor[HTML]{FFCC67} 
+\textbf{Produto A}     & 2                                 & 22                                      & C22                                \\ \hline
+\textbf{Produto C}     & 3                                 & 33                                      & C88                                \\ \hline
+\textbf{Produto D}     & 4                                 & 11                                      & c40                                \\ \hline
+\end{tabular}
+\fonteimagem{Fonte: Elaborado pelo autor}
+\end{table}
+
+Também é possível incluir fórmulas matemáticas, caso esteja com dificuldade para construir as equações, construa a equação em https://pt.symbolab.com/solver/equation-calculator, copie e cole aqui, obs, a equação deve estar entre \$equação\$ ou \$\$equação\$\$ (destacada). Outro detalhe é que não pode haver espaços entre o sinal \$ e a equação, exemplo:
+
+$$x^n + y^n = z^n$$
+
+Para incluir o sinal de porcentagem (\%) e outros sinais(\$ \# \^ \space \& \_ \{ \} \~ \space ) é necessário escapar o sinal com a barra invertida ($\backslash$).
+
+O Código Fonte \ref{lst:exemplocodigo1} é um exemplo de como colocar código no documento.
+
+
+%exemplo de código fonte, as configurações estão no arquivo packages.tex
+\lstinputlisting[language=PHP, 
+caption=Uma função em PHP
+,label=lst:exemplocodigo1]{trechos_codigo/php.m}
+
+
+\secao{Commits}
+
+Por fim, bahshahakjsdhkajhsdkjahskdhaksjhdakjhsdkjahsdkjhakjshdkajhsdkj
+
+OBS: NUNCA diga que não fez algo porque não deu tempo, se não daria tempo por que foi planejado? Se foi planejado e não deu tempo, você não administrou corretamente o projeto. É ainda pior se for algo muito simples.
+
+%\subsecao{\uppercase{Trabalhos futuros}}
+%Evite colocar aqui coisas que deveriam ter sido feitas no seu trabalho.
+%\begin{itemize}
+%\item Pense em algo bem mais avançado para o seu trabalho.
+%\item E sugira em tópicos.
+%\end{itemize}
+
+
+\secao{Activity}
+
+Por fim,bahshahakjsdhkajhsdkjahskdhaksjhdakjhsdkjahsdkjhakjshdkajhsdkj
+
+OBS: NUNCA diga que não fez algo porque não deu tempo, se não daria tempo por que foi planejado? Se foi planejado e não deu tempo, você não administrou corretamente o projeto. É ainda pior se for algo muito simples.
+
+%\subsecao{\uppercase{Trabalhos futuros}}
+%Evite colocar aqui coisas que deveriam ter sido feitas no seu trabalho.
+%\begin{itemize}
+%\item Pense em algo bem mais avançado para o seu trabalho.
+%\item E sugira em tópicos.
+%\end{itemize}
+
+\secao{Reuniões}
+
+\secao{Códigos e testes Realizados}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+
+\newpage
+
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\renewcommand{\bibname}{\textbf{REFERÊNCIAS}}
+%v 2.3
+\bibliographystyle{abntex2-cite-min}
+\bibliography{referencias}
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+%
+%% ---
+%% Inicia os apêndices
+%% ---
+%\begin{apendicesenv}
+%
+%% Imprime uma página indicando o início dos apêndices
+%\partapendices
+%
+%% ----------------------------------------------------------
+%\chapter{Protótipos do sistema}
+%\label{appendix:prototipos}
+%% ----------------------------------------------------------
+%
+%\begin{figure}[h]
+   % \caption{Exemplo de imagem A}
+  %  \centering
+   % \includegraphics[width=5cm]{imagens/grafico.png}
+    %\label{figura:qualquernome2}
+   % \fonteimagem{Fonte: Elaborado pelo autor}
+%\end{figure}
+
+%begin{figure}[h]
+    %\caption{Exemplo de imagem B}
+   % \centering
+    %\includegraphics[width=5cm]{imagens/grafico.png}
+    %\label{figura:qualquernome3}
+    %\fonteimagem{Fonte: Elaborado pelo autor}
+%\end{figure}
+%
+%% ----------------------------------------------------------
+%\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+%ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+%% ----------------------------------------------------------
+%\lipsum[55-57]
+%
+%\end{apendicesenv}
+%% ---
+%
+%
+%% ----------------------------------------------------------
+%% Anexos
+%% ----------------------------------------------------------
+%
+%% ---
+%% Inicia os anexos
+%% ---
+\begin{anexosenv}
+%
+%% Imprime uma página indicando o início dos anexos
+\partanexos
+%
+%% ---
+\chapter{Comprovante de orientação}
+%% ---
+\lipsum[30]
+%
+%% ---
+%\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus}
+%% ---
+%
+\lipsum[31]
+%
+
+
+\end{anexosenv}
+%
+%%---------------------------------------------------------------------
+%% INDICE REMISSIVO
+%%---------------------------------------------------------------------
+%
+%\phantompart
+%
+%\printindex
+
+\end{document}
